@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+
+<h1>PROGRAMA Año mundial de la Fifa </h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var anhoMundial = 1930;
+    var limite = parseInt(prompt("Ingrese el año limite para calcular"))
+
+
+    alert("El primer mundial fue en " + anhoMundial);
+
+    while (anhoMundial <= limite) {
+
+    imprimir("Hubo mundial de la fifa en el año " + anhoMundial);    
+    anhoMundial = anhoMundial + 4;
+    
+    }
+
+    imprimir ("FIN");
+
+</script>
